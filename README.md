@@ -38,9 +38,11 @@ To test the pipeline's robustness, I simulated a 12-month production scenario in
 * *Solution:* Enforced strict IAM user separation via browser profiles to prevent accidental Root user execution.
 
 ## 🛠️ Tech Stack
-* **Cloud:** AWS SageMaker, S3, EventBridge, Lambda, CloudWatch.
-* **Frameworks:** Python, Scikit-Learn (Logistic Regression, SMOTE), Pandas.
-* **DevOps:** CI/CD for ML, Docker (SageMaker Processing Containers).
+* **Cloud Platform:** AWS SageMaker (Pipelines, Model Registry, Endpoints).
+* **Orchestration:** Amazon EventBridge (Trigger), AWS Lambda (Deployment).
+* **Storage & Monitoring:** Amazon S3, CloudWatch, SageMaker Model Monitor.
+* **Machine Learning:** Scikit-Learn (Logistic Regression, SMOTE), Pandas.
+* **Environment:** Python 3.10 (SageMaker Managed Runtimes).
 
 ## 📂 Repository Structure
 * `pipelines/`: Contains the `pipeline.py` definition for SageMaker.
