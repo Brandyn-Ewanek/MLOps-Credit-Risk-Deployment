@@ -19,7 +19,7 @@ The system follows a mature MLOps pattern using AWS serverless components:
 4.  **Deployment (CI/CD):** An **EventBridge** rule triggers an AWS Lambda function to deploy approved models to a real-time SageMaker Endpoint.
 5.  **Monitoring:** A Model Monitor captures live traffic to detect drift and trigger retraining loops.
 
-![Pipeline Diagram](assets/pipeline_diagram.png)
+![Pipeline Diagram](assets/pipeline_diagram.jpg)
 
 ## 📊 Key Results & "Drift" Simulation
 To test the pipeline's robustness, I simulated a 12-month production scenario involving both **Data Drift** (shifting feature means) and **Concept Drift** (flipping labels for high-value transactions).
